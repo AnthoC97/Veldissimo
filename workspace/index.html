@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://use.fontawesome.com/5c239fc7f7.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <!--[if lt IE 9]>
+        	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title></title>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header role="banner">
+            <div class="layout flex_line">
+                <a href=""><img src="logo.png" alt="" height="113" width="237"></a>
+            </div>
+        </header>
+
+        <main role="main">
+            <section class="orange-1">
+                <div class="layout flex_line" id="fl" >
+                    <div class="orange-1_l">
+                        <span id="sl_play" class="sl_command"></span>
+                        <span id="sl_pause" class="sl_command"></span>
+                        
+                        
+                        <span id="sl_i1" class="sl_command sl_i"></span>
+                        <span id="sl_i2" class="sl_command sl_i"></span>
+                        <span id="sl_i3" class="sl_command sl_i"></span>
+                        <section id="slideshow">
+                        	<a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+                        	<a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+                        	
+                        	<a class="commands prev commands1" href="#sl_i3" title="Aller à la dernière slide">&lt;</a>  
+                        	<a class="commands next commands1" href="#sl_i2" title="Aller à la 2ème slide">&gt;</a>  
+                        	<a class="commands prev commands2" href="#sl_i1" title="Aller à la 1ère slide">&lt;</a>  
+                        	<a class="commands next commands2" href="#sl_i3" title="Aller à la 3ème slide">&gt;</a>  
+                        	<a class="commands prev commands3" href="#sl_i2" title="Aller à la 2ème slide">&lt;</a>  
+                        	<a class="commands next commands3" href="#sl_i1" title="Aller à la 4ème slide">&gt;</a>  
+                        	<div class="container">
+                        		<div class="c_slider"></div>
+                        		<div class="slider">
+                        				<img id="img1" src="img1.jpg" alt=""/>
+                        				<img id="img2" src="img2.jpg" alt="" />
+                        				<img id="img3" src="img3.jpg" alt="" />
+                        		</div>
+                        	</div>
+                        		
+                        	<span id="timeline"></span>
+                        	
+                        	<!--<ul class="dots_commands"><!--
+                        		-><li><a title="Afficher la slide 1" href="#sl_i1">Slide 1</a></li><!--
+                        		-><li><a title="Afficher la slide 2" href="#sl_i2">Slide 2</a></li><!--
+                        		-><li><a title="Afficher la slide 3" href="#sl_i3">Slide 3</a></li><!--
+                        	-></ul>-->
+                        	
+                        </section>
+                    </div>
+                    <div class="orange-1_r">
+                        <div class="widgetform_touchvibes wf_1471">
+                            <div class="widgetform_container">
+                                <form method="POST" action="persistance.php">
+                                    <div class="widgetform_header">
+                                        <div class="widgetform_tooltip jtooltip" style="display: none;"></div>
+                                        <div class="jWidgetFormTitle widgetform_title">Faites-vous rappeler par </br>un de nos conseillers </div>
+                                    </div>
+                                    <div class="jWidgetFormCatchphrase widgetform_catchphrase">en remplissant le formulaire et en indiquant<br>la personne à contacter</div>
+                                    <div class="jWidgetForm1 ccmcss_form ccmcss_form--w25">
+                                        <div>
+                                            <div class="jFieldadditionalField15237 ccmcss_form__line ccmcss_form__line--radio grid_line">
+                                                <div class="grid_left"><label>Civilité&nbsp;*</label></div>
+                                                <div class="grid_last">
+                                                    <div class="grid_row value">
+                                                        <div class="grid_col"><input type="radio" name="civilite" id="additionalField15237_0" value="Madame" class="jadditionalField15237 jInput"> <label for="additionalField15237_0"> Mme </label></div>
+                                                        <div class="grid_col"><input type="radio" name="civilite" id="additionalField15237_1" value="Monsieur" class="jadditionalField15237 jInput"> <label for="additionalField15237_1"> M </label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="jFieldadditionalField15228 ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label for="additionalField15228">Nom&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="text" name="nom" id="additionalField15228" value="" placeholder="" maxlength="" required="" class="jadditionalField15228 jInput"></div>
+                                            </div>
+                                            <div class="jFieldadditionalField15229 ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label for="additionalField15229">Prénom&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="text" name="prenom" id="additionalField15229" value="" placeholder="" maxlength="" required="" class="jadditionalField15229 jInput"></div>
+                                            </div>
+                                            <div class="jFieldadditionalField15235 ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label for="additionalField15235">Raison sociale&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="text" name="raison_sociale" id="additionalField15235" value="" placeholder="" maxlength="" required="" class="jadditionalField15235 jInput"></div>
+                                            </div>
+                                            <div class="jFieldadditionalField15488 ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label for="additionalField15488">Email&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="email" data-type="email" name="mail" id="additionalField15488" value="" placeholder="" maxlength="" required="" class="jadditionalField15488 jInput" pattern="^([a-zA-Z0-9_\-\+'\.\=\|])+\@([a-zA-Z0-9_\-\.])+\.([a-zA-Z]{2,13})$">
+                                                    <span
+                                                        class="jWidgetFormEmailCorrect widgetform_emailcorrect" style="display:none;">Ce domaine ne semble pas correct</span>
+                                                </div>
+                                            </div>
+                                            <div class="jFieldadditionalField15489 ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label for="additionalField15489">Téléphone&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="tel" data-type="tel" name="gsm" id="additionalField15489" value="" placeholder="" maxlength="" required="" class="jadditionalField15489 jInput" pattern="^((0|(\+\d{2,3})) ?\d)(?:[ _.-]?(\d{2})){4}$"></div>
+                                            </div>
+                                            <div class="jFieldadditionalField15490 jGeolocField ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label class="jGeolocLabel" for="additionalField15490">Code postal&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="text" name="code_postal" id="additionalField15490" value="" placeholder="" maxlength="" required="" class="jadditionalField15490 jZipcode jInput" pattern="^[0-9]{5,5}$"></div>
+                                            </div>
+                                            <div class="jFieldadditionalField15491 jGeolocField ccmcss_form__line grid_line">
+                                                <div class="grid_left"><label class="jGeolocLabel" for="additionalField15491">Ville&nbsp;*</label></div>
+                                                <div class="grid_last"><input type="text" name="commune" id="additionalField15491" value="" placeholder="" maxlength="" required="" class="jadditionalField15491 jCity jInput"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jWidgetForm2 ccmcss_form ccmcss_form--w25" style="display: inherit;">
+                                        <div>
+                                            <footer class="ccmcss_form__line--no_col"><input type="submit" value="Valider" class="jFormSubmit widgetform_submit jWidgetFormGa">
+                                                <p class="app_mandatory_field">Les champs signalés par * sont obligatoires.</p>
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="orange-2">
+                <div class="layout">
+                    <h1 class="orange-f-1">Une solution innovante qui s'adapte à votre budget</h1>
+                    <div class="grid_row gutter">
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p1.jpg" alt="">
+                                <i class="fa fa-eur" aria-hidden="true"></i></br>
+                                Des forfaits tout compris avec communications en illimité
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p2.jpg" alt="">
+                                <i class="fa fa-smile-o" aria-hidden="true"></i></br>
+                                Des fonctionnalités riches et facile à utiliser
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p3.jpg" alt="">
+                                <i class="fa fa-cogs" aria-hidden="true"></i></br>
+                                Votre ligne fixe utilisable sur votre mobile ou votre pc
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p4.jpg" alt="">
+                                <i class="fa fa-compress" aria-hidden="true"></i></br>
+                                Des applications intuitives de téléphone pour ordinateur et mobile
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p5.jpg" alt="">
+                                <i class="fa fa-universal-access" aria-hidden="true"></i></br>
+                                La téléphonie d'entreprise enfin accessible
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="orange-3">
+                <div class="layout">
+                    <h1 class="orange-f-2">Mise en place d'un ensemble de services et options spécialement étudiés pour répondre à vos attentes de professionnels.</h1>
+                    <div class="grid_row gutter">
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p1.jpg" alt="">
+                                <i class="fa fa-phone" aria-hidden="true"></i></br>
+                                Conservez vos numéros ou profitez d’une large gamme de numéros (régionaux ou spéciaux)
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p2.jpg" alt="">
+                                <i class="fa fa-wrench" aria-hidden="true"></i></br>
+                                Votre installation sur site par des techniciens certifiés
+                            </div>
+                            <div class="grid_col w20 grid_col--middle">
+                                <img src="p3.jpg" alt="">
+                                <i class="fa fa-handshake-o" aria-hidden="true"></i></br>
+                                Un service client basé en Guyane, au service de votre satisfaction
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="orange-4">
+                <div class="layout">
+                    <h1 class="orange-f-3">Comment bénéficier de cette offre ?</h1>
+                    <div class="grid_row gutter">
+                        <div class="grid_col w33 grid_col--middle">
+                            <h2 class="orange-f-4" id="h2bold">Contactez notre service client : </h2>
+                            <ul>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i>contact@veldissimotelecom.fr</li>
+                                <li><i class="fa fa-phone-square" aria-hidden="true"></i>  0594 36 36 00</li>
+                            </ul>
+                        </div>
+                        <div class="grid_col w33 grid_col--middle">
+                            <h2 class="orange-f-4">Recevez notre proposition commerciale dans les plus brefs délais</h2>
+                            <!--<ul>
+                                <li>Renvois, transferts d'appels, appels simultanés</li>
+                                <li>Accès aux fonctionnalités de mon téléphone de bureau sur mon mobile avec My Office Phone</li>
+                            </ul>-->
+                        </div>
+                        <div class="grid_col w33 grid_col--middle">
+                            <h2 class="orange-f-4">Bénéficiez d'un service de qualité et d'un accopagnement personnalisé d'une équipe rapide et efficace</h2>
+                            <!--<ul>
+                                <li>1 à 20 lignes fixes<sup>(2)</sup> avec numéro direct, postes téléphoniques et forfaits d'appels inclus</li>
+                                <li>Services de standard téléphonique inclus dans la Livebox Pro</li>
+                                <li>Installation et prise en main sur site incluses</li>
+                                <li>Facture unique</li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <!--<div class="layout">
+                Plus d'infos sur <strong>orangepro.fr</strong><br>
+                Offres soumises à conditions, valables en France métropolitaine exclusivement réservées aux professionnels sur présentation de justificatifs, sous réserve d'éligibilité et de comptabilité technique.<br>
+                Conditions et détail des offres sur orangepro.fr ou auprès de votre conseiller. Durée d'engagement : 24 mois<br>
+                <sup>(1)</sup>Inclus en version Intense et en option en version Equilibre. Le paiement éventuel de droits musicaux relève de la seule responsabilité du client.<br>
+                <sup>(2)</sup>À partir de la deuxième ligne, souscription de l'option "ligne utilisateur supplémentaire" nécessaire.
+            </div>-->
+        </footer>
+
+        <script>!function(a){if(null===a.getElementById("widgetform_fo_loader")){var b=a.createElement("script");b.async=!0,b.setAttribute("id","widgetform_fo_loader"),b.src="http://estatic.ccmbg.com/zkbi112mlu.ccmbg.com/js/widgetform_fo",document.getElementsByTagName("head")[0].appendChild(b)}}(document);</script>
+    </body>
+</html>
+

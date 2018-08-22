@@ -1,0 +1,1348 @@
+html {
+    box-sizing: border-box;
+    width:100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    width:100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+i {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizequality;
+    vertical-align: top
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+dl,
+dt,
+dd,
+ol,
+ul,
+li {
+    margin: 0;
+    padding: 0
+}
+
+figure {
+    margin: 0
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font-size: 100%;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+label {
+    cursor: pointer
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    vertical-align: top
+}
+
+.clearfix:after,
+.grid_line:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.grid_line .grid_left,
+.grid_line .grid_right,
+.grid_line .grid_last,
+.grid_row .grid_col {
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important
+}
+
+.mod {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem
+}
+
+@media (max-width: 768px) {
+    .mod {
+        margin-bottom: 10px;
+        margin-bottom: 0.625rem
+    }
+}
+
+.ccmcss_align_l {
+    text-align: left
+}
+
+.ccmcss_align_c {
+    text-align: center
+}
+
+.ccmcss_align_r {
+    text-align: right
+}
+
+.ccmcss_align_j {
+    text-align: justify
+}
+
+.ccmcss_valign_t {
+    vertical-align: top
+}
+
+.ccmcss_valign_m {
+    vertical-align: middle
+}
+
+.ccmcss_valign_b {
+    vertical-align: bottom
+}
+
+.ccmcss_ft_xs {
+    font-size: 0.75em
+}
+
+.ccmcss_ft_s {
+    font-size: 0.85em
+}
+
+.ccmcss_ft_l {
+    font-size: 1.15em
+}
+
+.ccmcss_ft_xl {
+    font-size: 1.25em
+}
+
+.ccmcss_ft_bold {
+    font-weight: bold
+}
+
+.ccmcss_hidden {
+    visibility: hidden
+}
+
+.ccmcss_helvetica {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.ccmcss_georgia {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+.ccmcss_tahoma {
+    font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
+}
+
+.ccmcss_courier {
+    font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace
+}
+
+.ccmcss_verdana {
+    font-family: Verdana, Geneva, sans-serif
+}
+
+.grid_line.gutter {
+    margin-left: -30px
+}
+
+@media (max-width: 768px) {
+    .grid_line.gutter {
+        margin-left: -10px
+    }
+}
+
+.grid_line.gutter>[class^=grid_] {
+    border-left: 30px solid transparent
+}
+
+@media (max-width: 768px) {
+    .grid_line.gutter>[class^=grid_] {
+        border-left: 10px solid transparent
+    }
+}
+
+.grid_row.gutter>*+* {
+    border-left: 30px solid transparent
+}
+
+@media (max-width: 768px) {
+    .grid_row.gutter>*+* {
+        border-left: 10px solid transparent
+    }
+}
+
+.grid_row {
+    display: table;
+    width: 100%
+}
+
+.grid_row.fixed,
+.grid_row.grid_row--fixed {
+    table-layout: fixed
+}
+
+.grid_row.grid_row--auto {
+    width: auto
+}
+
+.grid_col {
+    display: table-cell;
+    vertical-align: top
+}
+
+.grid_col.grid_col--middle {
+    vertical-align: middle
+}
+
+.grid_col.grid_col--bottom {
+    vertical-align: bottom
+}
+
+.grid_left,
+.left {
+    float: left
+}
+
+.grid_right,
+.right {
+    float: right
+}
+
+.w5 {
+    width: 5%
+}
+
+.w10 {
+    width: 10%
+}
+
+.w15 {
+    width: 15%
+}
+
+.w16 {
+    width: 16.6667%
+}
+
+.w20 {
+    width: 20%
+}
+
+.w25 {
+    width: 25%
+}
+
+.w30 {
+    width: 30%
+}
+
+.w33 {
+    width: 33.3334%
+}
+
+.w35 {
+    width: 35%
+}
+
+.w40 {
+    width: 40%
+}
+
+.w45 {
+    width: 45%
+}
+
+.w50 {
+    width: 50%
+}
+
+.w55 {
+    width: 55%
+}
+
+.w60 {
+    width: 60%
+}
+
+.w65 {
+    width: 65%
+}
+
+.w66 {
+    width: 66.6667%
+}
+
+.w70 {
+    width: 70%
+}
+
+.w75 {
+    width: 75%
+}
+
+.w80 {
+    width: 80%
+}
+
+.w85 {
+    width: 85%
+}
+
+.w90 {
+    width: 90%
+}
+
+.w95 {
+    width: 95%
+}
+
+.w100 {
+    width: 100%
+}
+
+.grid_last {
+    display: table-cell;
+    float: none;
+    width: auto
+}
+
+.grid_last:after {
+    content: "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    font-size: 100px;
+    line-height: 0
+}
+
+@media (max-width: 768px) {
+    .grid_row:not(.grid--norwd) {
+        display: block
+    }
+    .grid_line:not(.grid--norwd)>.grid_left,
+    .grid_line:not(.grid--norwd)>.grid_right,
+    .grid_line:not(.grid--norwd)>.grid_col,
+    .grid_line:not(.grid--norwd)>.grid_last,
+    .grid_row:not(.grid--norwd)>.grid_left,
+    .grid_row:not(.grid--norwd)>.grid_right,
+    .grid_row:not(.grid--norwd)>.grid_col,
+    .grid_row:not(.grid--norwd)>.grid_last {
+        float: none;
+        width: 100%;
+        display: block;
+        border: none
+    }
+    .grid_line:not(.grid--norwd).gutter,
+    .grid_row:not(.grid--norwd).gutter {
+        margin-left: 0
+    }
+    .grid_line:not(.grid--norwd).gutter>.grid_left,
+    .grid_line:not(.grid--norwd).gutter>.grid_right,
+    .grid_line:not(.grid--norwd).gutter>.grid_col,
+    .grid_line:not(.grid--norwd).gutter>.grid_last,
+    .grid_row:not(.grid--norwd).gutter>.grid_left,
+    .grid_row:not(.grid--norwd).gutter>.grid_right,
+    .grid_row:not(.grid--norwd).gutter>.grid_col,
+    .grid_row:not(.grid--norwd).gutter>.grid_last {
+        margin-bottom: 10px
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
+}
+
+i {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+p {
+    font-size: 16px
+}
+
+a {
+    font-size: inherit;
+    color: #d6071b;
+    text-decoration: none
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline
+}
+
+.layout {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 10px
+}
+
+.flex_line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+@media (min-width: 769px) {
+    .flex_line {
+        flex-wrap: nowrap
+    }
+}
+
+.orange-f-1 {
+    font-size: 30px;
+    color: #4093c9;
+    font-weight: normal;
+    padding-bottom: 30px
+}
+
+.orange-f-2 {
+    font-size: 30px;
+    color: #d99a30;
+    font-weight: normal;
+    padding-bottom: 30px
+}
+
+.orange-f-3 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 30px
+}
+
+.orange-f-4 {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+html {
+    font-size: 16px
+}
+
+@media screen and (min-width: 480px) {
+    html {
+        font-size: calc(16px + 8 * (100vw - 480px) / 520)
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 24px
+    }
+}
+
+body {
+    line-height: 1.3;
+    font-family: Helvetica, Arial, sans-serif;
+    background: url("iphone-smartphone-mobile-hand-screen-man-952828-pxhere.com.jpg");
+}
+
+header[role="banner"] {
+    padding: 20px 0;
+    background: #000
+}
+
+main[role="main"] .orange-1 {
+    /*background: url("cover.png") no-repeat center top*/
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-1 {
+        background: #fff
+    }
+}
+
+main[role="main"] .orange-1 .orange-1_l,
+main[role="main"] .orange-1 .orange-1_r {
+    position: relative;
+    flex: 1 1 auto
+}
+
+main[role="main"] .orange-1 .orange-1_l {
+    flex-basis: 610px;
+    text-align: left;
+    margin-top: 50px
+}
+
+main[role="main"] .orange-1 .orange-1_l i {
+    display: inline-block;
+    text-align: left
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-1 .orange-1_l i {
+        display: block
+    }
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-1 .orange-1_l {
+        margin: 20px 0;
+        padding: 0 20px
+    }
+}
+
+main[role="main"] .orange-1 .orange-1_r {
+    margin-top: 50px;
+    flex-basis: 340px;
+}
+
+main[role="main"] .orange-2 {
+    margin: 10px 0;
+    padding: 30px 0;
+    background: #f2f2f2;
+    text-align: center
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-2 {
+        padding: 30px 0 0 0
+    }
+}
+
+main[role="main"] .orange-2 .grid_col {
+    vertical-align: top;
+    font-size: 16px
+}
+
+main[role="main"] .orange-2 .grid_col i {
+    margin-bottom: 20px
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-2 .grid_col {
+        padding-bottom: 30px
+    }
+    main[role="main"] .orange-2 .grid_col i {
+        margin-bottom: 5px
+    }
+}
+
+
+
+
+main[role="main"] .orange-3 {
+    margin: 10px 0;
+    padding: 30px 0;
+    background: #f2f2f2;
+    text-align: center
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-3 {
+        padding: 30px 0 0 0
+    }
+}
+
+main[role="main"] .orange-3 .grid_col {
+    vertical-align: top;
+    font-size: 16px
+}
+
+main[role="main"] .orange-3 .grid_col i {
+    margin-bottom: 20px
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-3 .grid_col {
+        padding-bottom: 30px
+    }
+    main[role="main"] .orange-3 .grid_col i {
+        margin-bottom: 5px
+    }
+}
+
+
+
+
+main[role="main"] .orange-4 {
+    padding: 30px 0;
+    background: #4093c9;
+    color: #fff
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-4 {
+        padding: 30px 0 0 0
+    }
+}
+
+main[role="main"] .orange-4 .grid_col {
+    vertical-align: top
+}
+
+@media (max-width: 768px) {
+    main[role="main"] .orange-4 .grid_col {
+        padding-bottom: 30px
+    }
+}
+
+main[role="main"] .orange-4 .grid_col ul {
+    font-size: 15px;
+    margin-left: 15px;
+    list-style-type: none
+}
+
+main[role="main"] .orange-4 .grid_col ul li {
+    padding-bottom: 5px
+}
+
+footer[role="contentinfo"] {
+    margin-top: 10px;
+    padding: 20px 0 60px;
+    background: #f2f2f2;
+    font-size: 11px;
+    color: #757575
+}
+
+.widgetform_touchvibes {
+    position: relative;
+    padding: 10px 20px !important;
+    background: rgba(248, 248, 249, 0.9) !important
+}
+
+.widgetform_touchvibes .widgetform_header .widgetform_title {
+    font-size: 18px;
+    color: 363636;
+    text-align: center;
+    text-transform: none;
+    margin: 0 auto
+}
+
+.widgetform_touchvibes .widgetform_catchphrase {
+    margin: 0 !important;
+    font-size: 14px;
+    color: #000;
+    text-align: center
+}
+
+.widgetform_touchvibes .jWidgetForm1 {
+    margin-top: 10px !important
+}
+
+.widgetform_touchvibes .ccmcss_form input[type="text"],
+.widgetform_touchvibes .ccmcss_form input[type="email"],
+.widgetform_touchvibes .ccmcss_form input[type="tel"],
+.widgetform_touchvibes select {
+    height: 25px !important;
+    background: #fff !important;
+    font-size: 14px !important;
+    border-radius: 0 !important;
+    padding: 2px 8px !important;
+    margin-top: 5px !important;
+    border: none !important;
+    width: 100% !important;
+    vertical-align: middle
+}
+
+.widgetform_touchvibes .ccmcss_form input[type="radio"] {
+    vertical-align: text-top
+}
+
+.widgetform_touchvibes i {
+    width: 100%;
+    max-width: 16px
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line>.grid_left {
+    width: 25% !important
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 {
+    margin-bottom: 0
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line--no_col {
+    padding-left: 0 !important
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line:not(.ccmcss_form__line--radio) {
+    margin-bottom: 4px
+}
+
+@media (max-width: 768px) {
+    .widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line:not(.ccmcss_form__line--radio)>.grid_left {
+        width: 25% !important;
+        float: none
+    }
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line:not(.ccmcss_form__line--radio) label {
+    text-align: left;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line--radio {
+    margin-bottom: 0px
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line--radio .grid_left {
+    height: 25px
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line--radio .grid_left label {
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: bottom
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line--radio .grid_last label {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    height: 25px;
+    vertical-align: text-top
+}
+
+.widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line:last-of-type {
+    margin-bottom: 0
+}
+
+.widgetform_touchvibes .ccmcss_form__msg {
+    font-size: 12px !important
+}
+
+.widgetform_touchvibes .ccmcss_form .ccmcss_form__line.ccmcss_form__line--radio .grid_last .grid_col {
+    padding-right: 0 !important
+}
+
+.widgetform_touchvibes .ccmcss_form+.ccmcss_form {
+    margin: 0;
+    border-top: 0
+}
+
+.widgetform_touchvibes .ccmcss_form+.ccmcss_form .widgetform_submit {
+    display: block;
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 370px;
+    height: 40px;
+    padding: 5px;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #4093c9 none
+}
+
+.widgetform_touchvibes .ccmcss_form+.ccmcss_form .app_mandatory_field {
+    padding: 10px 0 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 9px;
+    color: #767677
+}
+
+.widgetform_touchvibes .jGeoloc {
+    display: none !important
+}
+
+.widgetform_touchvibes .widgetform_emailcorrect {
+    font-size: 11px
+}
+
+.widgetform_touchvibes .widgetform_thanks {
+    min-height: 481px;
+    text-align: center;
+    padding-left: 20px
+}
+
+@media (max-width: 768px) {
+    .widgetform_touchvibes .widgetform_thanks {
+        min-height: auto
+    }
+}
+
+.widgetform_touchvibes .ccmcss_form__line--error .ccmcss_form__msg {
+    margin-bottom: -10px;
+    font-size: 10px
+}
+
+.widgetform_touchvibes .jFieldadditionalField14904 .grid_left {
+    margin-top: 10px !important
+}
+
+@media (max-width: 768px) {
+    .widgetform_touchvibes .jFieldadditionalField14904 .grid_left {
+        margin-top: 5px !important
+    }
+}
+
+@media (max-width: 796px) {
+    .widgetform_touchvibes .ccmcss_form.ccmcss_form--w25 .ccmcss_form__line.ccmcss_form__line--radio .grid_left {
+        float: left !important
+    }
+    .widgetform_touchvibes .grid_line:not(.grid--norwd)>.grid_last {
+        display: table-cell !important
+    }
+    .widgetform_touchvibes .grid_line:not(.grid--norwd)>.grid_last .grid_row:not(.grid--norwd)>.grid_col {
+        display: inline-block !important;
+        width: auto !important
+    }
+}
+
+
+
+
+#slideshow {
+	position: relative;
+	width: 690px;
+	height: 460px;
+	/*padding: 15px;*/
+	margin: 0 auto 2em;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/* CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+}
+
+/* gestion des dimensions et débordement du conteneur */
+#slideshow .container {
+	position:relative;
+	width: 690px;
+	height: 460px;
+	overflow: hidden;
+}
+	
+/* on prévoit un petit espace gris pour la timeline */
+/*#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}*/
+/* 
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+*/
+#slideshow .slider {
+	position: absolute;
+	left:0; top:0;
+	width: 300%;
+	height: 460px;
+}
+
+#slideshow .slider {
+	/* ... avec la propriété animation */
+	animation: slider 24s infinite;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+/* annulation des marges sur figure */
+#slideshow img {
+	float: left;
+    width: 33.33333333%;
+}
+
+@keyframes slider {
+	0%, 28%, 100%	{ left: 0 }
+	33%, 61%		{ left: -100% }
+	66%, 94%		{ left: -200% }
+}
+
+@-webkit-keyframes slider {
+	0%, 28%, 100%	{ left: 0 }
+	33%, 61%		{ left: -100% }
+	66%, 94%		{ left: -200% }
+}
+
+@-moz-keyframes slider  {
+	0%, 28%, 100%	{ left: 0 }
+	33%, 61%		{ left: -100% }
+	66%, 94%		{ left: -200% }
+}
+
+@keyframes slider {
+	0%, 28%, 100%	{ left: 0 }
+	33%, 61%		{ left: -100% }
+	66%, 94%		{ left: -200% }
+}
+
+
+
+
+
+
+.play_commands {
+	/* positionnement en haut à droite */ 
+	position: absolute;
+	bottom: -10%; right: 47.5%;
+	z-index: 10;
+	/* dimensionnement des icônes */
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	border:0 none;
+	/* placez l'opacité à 1 si vous souhaitez voir les commandes */
+	opacity: 0;
+	/* préparation de transition sur opacicty et right */
+	transition: opacity 1s, right 1s;
+}
+/* on décale play légèrement sur la gauche */
+.play { right: 47.5%; cursor: default; }
+ 
+/* création de l'icône pause avec 2 pseudos éléments */
+.pause:after,
+.pause:before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top:0;
+	width:38%;
+	height: 22px;
+	background: #fff;
+	background: rgba(0,0,0,0.8);
+}
+.pause:after { right:0; }
+.pause:before {	left:0; }
+ 
+/* création de l'icône play avec des bordures */
+.play {
+	width: 1px; 
+	height: 1px; 
+	/* les transparentes forment la flèche */
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #fff; 
+	border-left: 20px solid rgba(0,0,0,0.8); 
+	/* renseignez 1 pour voir l'icône de suite */
+	opacity: 0;
+}
+ 
+/* apparition du bouton pause au survole */
+/* apparition des boutons au focus */
+#slideshow:hover .pause,
+.play_commands:focus {
+	opacity: 1;
+	outline: none;
+}
+
+/* redémarrer les animations */
+#sl_play:target ~ #slideshow .slider,
+#sl_play:target ~ #slideshow figcaption,
+#sl_play:target ~ #slideshow #timeline,
+#sl_play:target ~ #slideshow .dots_commands li:first-child a:after {
+	animation-play-state: running;
+}
+
+/* stopper les animation */
+.sl_command:target ~ #slideshow .slider,
+.sl_command:target ~ #slideshow figcaption,
+.sl_command:target ~ #slideshow #timeline,
+.sl_command:target ~ #slideshow .dots_commands li:first-child a:after {
+	animation-play-state: paused;
+}
+ 
+/* switch entre les boutons */
+.sl_command:target ~ #slideshow .pause 		{ opacity:0; }
+#sl_play:target ~ #slideshow:hover .pause,
+#sl_play:target ~ #slideshow .pause:focus 	{ opacity:1; }
+.sl_command:target ~ #slideshow .play 		{ opacity:1; right: 47.5%; cursor: pointer; }
+#sl_play:target ~ #slideshow .play 			{ opacity:0; right: 55px; cursor: default; }
+
+
+
+
+
+
+#slideshow .commands {
+    z-index: 10;
+	position: absolute;
+	bottom: -2px;
+	padding: 5px 13px;
+	border-bottom:0;
+	/*font-size: 1.3em;*/
+	color: #fff;
+	text-decoration:none;
+	background-color: rgba(0,0,0,0.4);
+	/*background-image: linear-gradient(#fff,#ddd);*/
+	text-shadow: 0 0 1px #aaa;
+	/*border-radius: 50%;*/
+	height: 100.5%;
+	line-height: 1675%;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+ 
+#slideshow .prev { left: 0%; }
+#slideshow .next { right: -2px; }
+ 
+#slideshow .commands { display:none; }
+#slideshow .commands1 {	display: block; }
+
+#slideshow .c_slider {
+	position: absolute;
+	left:0; top:0;
+	width: 300%;
+	height: 460px;
+	/* multiple background */
+	background: url(img1.jpg) 0 0 no-repeat,
+	            url(img2.jpg) 690px 0 no-repeat,
+	            url(img3.jpg) 1080px 0 no-repeat;
+	background-size: 33.33333333%;
+	transition: background 1s;
+}
+
+/* on cache le slider */
+.sl_i:target ~ #slideshow .slider									{ visibility: hidden }
+/* on planque la 1ère pastille (cf. bonux suivant) */
+.sl_i:target ~ #slideshow .dots_commands li:first-child a:after		{ display:none; }
+/* pour afficher la 2ème pastille (cf. bonux suivant) */
+.sl_i:target ~ #slideshow .dots_commands li:first-child a:before	{ display:block; }
+ 
+/* lorsque on cible le premier slider */
+/* on cache tous les "précédent" et "suivant" */
+#sl_i1:target ~ #slideshow .commands								{ display: none; }
+/* on affiche seulement deux flèches */
+#sl_i1:target ~ #slideshow .commands1								{ display: block; }
+/* correspond au décalage des images */
+#sl_i1:target ~ #slideshow .c_slider								{ background-position: 0 0, 690px 0, 1080px 0, 1620px 0; }
+/* on place la pastille tout à gauche */
+#sl_i1:target ~ #slideshow .dots_commands li:first-child a:before	{ left:0; }
+ 
+/* même procédé lorsqu'on cible le second slide */
+#sl_i2:target ~ #slideshow .commands								{ display: none; }
+#sl_i2:target ~ #slideshow .commands2								{ display: block; }
+#sl_i2:target ~ #slideshow .c_slider								{ background-position: -690px 0, 0 0, 690px 0, 1080px 0; }
+#sl_i2:target ~ #slideshow .dots_commands li:first-child a:before	{ left:18px; }
+ 
+/* puis le 3ème */
+#sl_i3:target ~ #slideshow .commands								{ display: none; }
+#sl_i3:target ~ #slideshow .commands3								{ display: block; }
+#sl_i3:target ~ #slideshow .c_slider								{ background-position: -1080px 0, -690px 0, 0 0, 690px 0; }
+#sl_i3:target ~ #slideshow .dots_commands li:first-child a:before	{ left:36px; }
+
+
+
+.dots_commands  {
+	padding:0;
+	margin:32px 0 0;
+	text-align: center;
+}
+.dots_commands li {
+	display: inline;
+	padding:0; margin:0;
+}
+.dots_commands a {
+	position: relative;
+	display: inline-block;
+	height:8px; width: 8px;
+	margin: 0 5px;
+	text-indent: -9999px;
+	background: #fff;
+ 
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+
+}
+/* quelques styles au focus */
+.dots_commands a:focus { 
+	outline: none;
+	background: orange;
+}
+.dots_commands li:first-child a { z-index: 25; }
+
+/* on style after et before, on utilisera les deux */
+.dots_commands li:first-child a:after,
+.dots_commands li:first-child a:before {
+	position: absolute;
+	top: 0; left: 0;
+	content: " ";
+	width: 8px; height: 8px;
+	background: #bd9b83;
+	z-index:20;
+
+	border-radius: 50%;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+}
+/* on anime "after" */
+.dots_commands li:first-child a:after {
+	animation: dotser 32s infinite;
+}
+/* on cache "before", on l'utilise uniquement au clic (cf. bonux précédent) */
+.dots_commands li:first-child a:before { display:none; }
+ 
+/* c'est parti pour l'animation ! */
+@keyframes dotser {
+	0%, 100% 	{ opacity: 1; left: 0; 		}
+ 		
+	20%			{ opacity: 1; left: 0;		}
+	22%			{ opacity: 0; left: 0;		}
+	25%			{ opacity: 0; left: 18px;	}
+	28%			{ opacity: 1; left: 18px;	}
+ 		
+	53%			{ opacity: 1; left: 18px;	}
+	55%			{ opacity: 0; left: 18px;	}
+	58%			{ opacity: 0; left: 36px;	}
+	61%			{ opacity: 1; left: 36px;	}
+ 		
+	86%			{ opacity: 1; left: 36px;	}
+	88%			{ opacity: 0; left: 36px;	}
+	91%			{ opacity: 0; left: 0px;	}
+	94%			{ opacity: 1; left: 0px;	}
+ 		
+	/*95%			{ opacity: 1; left: 54px;	}
+	97%			{ opacity: 0; left: 54px;	}
+	98%			{ opacity: 0; left: 0;	}*/
+}
+
+@media(max-width: 768px) {
+    .orange-1_l * {
+        display: none;
+    }
+    main[role="main"] #fl{
+        max-width: 100%;   
+    }
+}
+
+.fa{
+    font-size: 50px;
+}
+
+#fl{
+    display: flex;
+    max-width: 90%;   
+}
+
+@media(max-width:1313px){
+    #fl{
+        flex-direction:column;
+    }
+    
+    main[role="main"] .orange-1 .orange-1_l, main[role="main"] .orange-1 .orange-1_r{
+        flex-basis:auto;
+    }
+}
+
+#h2bold{
+    font-weight: bold;
+}
+
+ul li .fa{
+    margin-right:20px;
+    font-size: 25px;
+}
+
+h2{
+    font-weight: normal;
+}
